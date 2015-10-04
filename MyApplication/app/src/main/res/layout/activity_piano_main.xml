@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/blackkeys"
-    android:alignTop="true"
     android:orientation="horizontal"
     android:weightSum="2"
     android:clickable="false">
@@ -86,4 +85,3 @@
             android:id="@+id/buttonc"></Button>
     </LinearLayout>
 </LinearLayout>
->>>>>>> 9eed0f617235617f279f6d4041cda792fb1d9f04
