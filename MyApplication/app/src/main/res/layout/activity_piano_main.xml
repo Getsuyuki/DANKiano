@@ -8,4 +8,37 @@
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <Button android:id="@+id/white1" class="pianokeywhite" style="@style/pianokeywhite">
+        <Button class="pianokeyblack"></Button>
+    </Button>
+    <Button class="pianokeywhite" style="@style/pianokeywhite">
+        <Button class="pianokeyblack"></Button>
+    </Button>
+
+    <Button class="pianokeywhite" style="@style/pianokeywhite"></Button>
+
+    <Button class="pianoskeywhite" style="@style/pianokeywhite">
+        <Button class="pianokeyblack"></Button>
+    </Button>
+    <Button class="pianokeywhite" style="@style/pianokeyblack">
+        <Button class="pianokeyblack"></Button>
+    </Button>
+    <Button class="pianokeywhite" style="@style/pianokeywhite">
+        <Button class="pianokeyblack"></Button>
+    </Button>
+
+    <Button class="pianokeywhite" style="@style/pianokeywhite"></Button>
+
+    <Button class="pianokeywhite" style="@style/pianokeywhite">
+        <Button class="pianokeyblack"></Button>
+    </Button>
+    <Button class="pianokeywhite" style="@style/pianokeywhite">
+        <Button class="pianokeyblack"></Button>
+    </Button>
+    <Button class="pianokeywhite" style="@style/pianokeywhite"></Button>
+
+    <Button class="pianokeywhite" style="@style/pianokeywhite">
+        <Button class="pianokeyblack"></Button>
+    </Button>
+    <Button class="pianokeywhite" style="@style/pianokeywhite"></Button>
 </RelativeLayout>
