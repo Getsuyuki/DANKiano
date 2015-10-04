@@ -37,9 +37,4 @@ public class PianoMain extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    public void onClick_whitekey(View v)
-    {
-
-    }
 }
