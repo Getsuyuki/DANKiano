@@ -74,8 +74,6 @@ public class PianoMain extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-<<<<<<< HEAD
-=======
     
     public boolean onTouch1(View v, MotionEvent event)
     {
@@ -321,5 +319,4 @@ public class PianoMain extends ActionBarActivity {
             e.printStackTrace();
         }
     }
->>>>>>> origin/master
 }
