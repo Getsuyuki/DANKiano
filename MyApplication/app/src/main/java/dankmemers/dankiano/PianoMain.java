@@ -74,40 +74,7 @@ public class PianoMain extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-/*
-    public boolean onTouch1(View v, MotionEvent event)
-    {
-        switch (event.getAction())
-        {
-            case MotionEvent.ACTION_DOWN:
-            {
-                if(!(mp1.isPlaying())) {
-                    try {
-                        mp1.reset();
-                        AssetFileDescriptor afd;
-                        afd = getAssets().openFd(songlist[0]);
-                        mp1.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
-                        mp1.prepare();
-                        mp1.start();
-                    } catch (IllegalStateException e) {
-                        e.printStackTrace();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                    System.out.println("Playing");
-                }
-            }
-            break;
-            case MotionEvent.ACTION_UP:
-            {
-                mp1.stop();
-                System.out.println("Stopped");
-            }
-            break;
-        }
-        return true;
-    }
-*/
+
     public void onClick_whitekey1(View v)
     {
         if(mp1.isPlaying())
