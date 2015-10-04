@@ -75,13 +75,14 @@
 
         <Button class="pianokeywhite" style="@style/pianokeywhite"
             android:id="@+id/buttone"
-            android:onClick="onClick_whitekey7"></Button>
+            android:onClick="onClick_whitekey6"></Button>
 
         <Button class="pianokeywhite" style="@style/pianokeywhite"
             android:id="@+id/buttond"
-            android:onClick="onClick_whitekey8"></Button>
+            android:onClick="onClick_whitekey7"></Button>
 
         <Button class="pianokeywhite" style="@style/pianokeywhite"
-            android:id="@+id/buttonc"></Button>
+            android:id="@+id/buttonc"
+            android:onClick="onClick_whitekey8"></Button>
     </LinearLayout>
 </LinearLayout>
