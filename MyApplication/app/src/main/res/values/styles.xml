@@ -2,17 +2,22 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-
-
     </style>
     <style name="pianokeywhite">
-        <item name="android:layout_height">30dp</item>
-        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:background">@color/white</item>
     </style>
     <style name="pianokeyblack">
-        <item name="android:layout_height">10dp</item>
-        <item name="android:layout_width">6dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:background">@color/black</item>
+    </style>
+    <style name="frame_blackwhitepair">
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_weight">1</item>
     </style>
 </resources>

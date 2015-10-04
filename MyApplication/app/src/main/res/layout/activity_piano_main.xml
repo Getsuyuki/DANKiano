@@ -8,37 +8,26 @@
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <Button android:id="@+id/white1" class="pianokeywhite" style="@style/pianokeywhite">
-        <Button class="pianokeyblack"></Button>
-    </Button>
-    <Button class="pianokeywhite" style="@style/pianokeywhite">
-        <Button class="pianokeyblack"></Button>
-    </Button>
-
+    <FrameLayout style="@style/frame_blackwhitepair">
+        <Button class="pianokeywhite" style="@style/pianokeywhite" android:onClick="onClick_whitekey"></Button>
+        <Button class="pianokeyblack" style="@style/pianokeyblack"></Button>
+    </FrameLayout>
+    <FrameLayout style="@style/frame_blackwhitepair">
+        <Button class="pianokeywhite" style="@style/pianokeywhite"></Button>
+        <Button class="pianokeyblack" style="@style/pianokeyblack"></Button>
+    </FrameLayout>
     <Button class="pianokeywhite" style="@style/pianokeywhite"></Button>
-
-    <Button class="pianoskeywhite" style="@style/pianokeywhite">
-        <Button class="pianokeyblack"></Button>
-    </Button>
-    <Button class="pianokeywhite" style="@style/pianokeyblack">
-        <Button class="pianokeyblack"></Button>
-    </Button>
-    <Button class="pianokeywhite" style="@style/pianokeywhite">
-        <Button class="pianokeyblack"></Button>
-    </Button>
-
-    <Button class="pianokeywhite" style="@style/pianokeywhite"></Button>
-
-    <Button class="pianokeywhite" style="@style/pianokeywhite">
-        <Button class="pianokeyblack"></Button>
-    </Button>
-    <Button class="pianokeywhite" style="@style/pianokeywhite">
-        <Button class="pianokeyblack"></Button>
-    </Button>
-    <Button class="pianokeywhite" style="@style/pianokeywhite"></Button>
-
-    <Button class="pianokeywhite" style="@style/pianokeywhite">
-        <Button class="pianokeyblack"></Button>
-    </Button>
-    <Button class="pianokeywhite" style="@style/pianokeywhite"></Button>
+    <FrameLayout style="@style/frame_blackwhitepair">
+        <Button class="pianokeywhite" style="@style/pianokeywhite"></Button>
+        <Button class="pianokeyblack" style="@style/pianokeyblack"></Button>
+    </FrameLayout>
+    <FrameLayout style="@style/frame_blackwhitepair">
+        <Button class="pianokeywhite" style="@style/pianokeywhite"></Button>
+        <Button class="pianokeyblack" style="@style/pianokeyblack"></Button>
+    </FrameLayout>
+    <FrameLayout style="@style/frame_blackwhitepair">
+        <Button class="pianokeyblack" style="@style/pianokeyblack"></Button>
+        <Button class="pianokeywhite" style="@style/pianokeywhite"></Button>
+    </FrameLayout>
+    <!--<Button class="pianokeywhite" style="@style/pianokeywhite"></Button>-->
 </RelativeLayout>
