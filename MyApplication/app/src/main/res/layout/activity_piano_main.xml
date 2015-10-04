@@ -1,80 +1,89 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".PianoMain">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/blackkeys"
+    android:alignTop="true"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:clickable="false">
 
-    <Button class="pianokeywhite" style="@style/pianokeywhite"
-        android:id="@+id/button"
-        android:layout_alignTop="@+id/button2"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2"
-        android:onClick="onTouch1" ></Button>
 
-    <Button class="pianokeywhite" style="@style/pianokeywhite"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
-        android:id="@+id/button10"></Button>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:weightSum="16"
+        android:orientation="vertical">
 
-    <Button class="pianokeywhite" style="@style/pianokeywhite"
-        android:id="@+id/button5"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView"></Button>
+        <LinearLayout
+            style="@style/spacer"
+            android:layout_weight="3"></LinearLayout>
 
-    <Button class="pianokeywhite" style="@style/pianokeywhite"
-        android:id="@+id/button4"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/button5"
-        android:layout_toEndOf="@+id/button5"></Button>
+        <Button class="pianokeyblack" style="@style/pianokeyblack"
+            android:id="@+id/buttonas"
+            android:onClick="onClick_blackkey1"></Button>
 
-    <Button class="pianokeywhite" style="@style/pianokeywhite"
-        android:id="@+id/button3"
-        android:layout_alignTop="@+id/button4"
-        android:layout_toRightOf="@+id/button4"
-        android:layout_toEndOf="@+id/button4"></Button>
+        <Button class="pianokeyblack" style="@style/pianokeyblack"
+            android:id="@+id/buttongs"
+            android:onClick="onClick_blackkey2"></Button>
 
-    <Button class="pianokeywhite" style="@style/pianokeywhite"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/button3"
-        android:layout_toRightOf="@+id/button3"
-        android:layout_toEndOf="@+id/button3"></Button>
-    <Button style= "@style/pianokeywhite"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button"></Button>
-    <Button class="pianokeyblack" style="@style/pianokeyblack"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/button5"
-        android:layout_toStartOf="@+id/button5"
-        android:id="@+id/button11"></Button>
+        <Button class="pianokeyblack" style="@style/pianokeyblack"
+            android:id="@+id/buttonfs"
+            android:onClick="onClick_blackkey3"></Button>
 
-    <Button class="pianokeyblack" style="@style/pianokeyblack"
-        android:id="@+id/button7"
-        android:layout_alignBaseline="@+id/button6"
-        android:layout_alignBottom="@+id/button6"
-        android:layout_toLeftOf="@+id/button2"
-        android:layout_toStartOf="@+id/button2"></Button>
-    <Button class="pianokeyblack" style="@style/pianokeyblack"
-        android:id="@+id/button9"
-        android:layout_alignBaseline="@+id/button7"
-        android:layout_alignBottom="@+id/button7"
-        android:layout_toLeftOf="@+id/button"
-        android:layout_toStartOf="@+id/button"></Button>
-    <Button class="pianokeyblack" style="@style/pianokeyblack"
-        android:id="@+id/button6"
-        android:layout_alignBaseline="@+id/button11"
-        android:layout_alignBottom="@+id/button11"
-        android:layout_toLeftOf="@+id/button4"
-        android:layout_toStartOf="@+id/button4"></Button>
-    <Button style="@style/pianokeyblack"
-        android:layout_alignTop="@+id/button9"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button"
-        android:id="@+id/button8"></Button>
-</RelativeLayout>
+        <LinearLayout
+            style="@style/spacer"></LinearLayout>
+
+        <Button class="pianokeyblack" style="@style/pianokeyblack"
+            android:id="@+id/buttonds"
+            android:onClick="onClick_blackkey4"></Button>
+
+        <Button class="pianokeyblack" style="@style/pianokeyblack"
+            android:id="@+id/buttoncs"
+            android:onClick="onClick_blackkey5"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:weightSum="8"
+        android:orientation="vertical">
+
+        <Button class="pianokeywhite" style="@style/pianokeywhite"
+            android:id="@+id/buttonch"
+            android:onClick="onClick_whitekey1"></Button>
+
+        <Button class="pianokeywhite" style="@style/pianokeywhite"
+            android:id="@+id/buttonb"
+            android:onClick="onClick_whitekey2"></Button>
+
+        <Button class="pianokeywhite" style="@style/pianokeywhite"
+            android:id="@+id/buttona"
+            android:onClick="onClick_whitekey3"></Button>
+
+        <Button class="pianokeywhite" style="@style/pianokeywhite"
+            android:id="@+id/buttong"
+            android:onClick="onClick_whitekey4"></Button>
+
+        <Button class="pianokeywhite" style="@style/pianokeywhite"
+            android:id="@+id/buttonf"
+            android:onClick="onClick_whitekey5"></Button>
+
+        <Button class="pianokeywhite" style="@style/pianokeywhite"
+            android:id="@+id/buttone"
+            android:onClick="onClick_whitekey7"></Button>
+
+        <Button class="pianokeywhite" style="@style/pianokeywhite"
+            android:id="@+id/buttond"
+            android:onClick="onClick_whitekey8"></Button>
+
+        <Button class="pianokeywhite" style="@style/pianokeywhite"
+            android:id="@+id/buttonc"></Button>
+    </LinearLayout>
+</LinearLayout>
+>>>>>>> 9eed0f617235617f279f6d4041cda792fb1d9f04
