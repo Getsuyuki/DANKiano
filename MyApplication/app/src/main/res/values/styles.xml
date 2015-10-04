@@ -6,7 +6,7 @@
     <style name="pianokeywhite">
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_weight">1</item>
+        <item name="android:layout_weight">2</item>
         <item name="android:background">@color/white</item>
         <item name="android:layout_margin">3dp</item>
     </style>

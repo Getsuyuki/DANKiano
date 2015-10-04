@@ -31,7 +31,7 @@ public class PianoMain extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_piano_main);
         songlist = new String[13];
-        songlist[0] = "bromance.wav";
+        songlist[0] = "scary.wav";
         songlist[1] = "bruh.wav";
         songlist[2] = "darude.wav";
         songlist[3] = "dun.wav";
